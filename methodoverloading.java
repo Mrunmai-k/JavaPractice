@@ -1,4 +1,6 @@
 class Calculator {
+    int num = 5; // instance variable of class Calculator
+
     public int add(int n1, int n2) {
         return n1 + n2;
     }
@@ -14,8 +16,16 @@ class Calculator {
 
 public class methodoverloading {
     public static void main(String[] args) {
-        Calculator obj = new Calculator();
-        int result = obj.add(10, 20);
+        int data = 10;  //instance variable of class methodoverloading
+
+        Calculator obj1 = new Calculator();
+        int result = obj1.add(10, 20);
         System.out.println(result);
+
+        System.out.println(data);
+        System.out.println(obj1.num);   
     }
 }
+
+// Every method has its own stack
+// Heap is used to store the objects
