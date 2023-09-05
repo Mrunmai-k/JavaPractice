@@ -25,25 +25,47 @@ public class array {
 
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < 4; j++) {
-                nums[i][j] = (int)(Math.random() * 10);
+                nums[i][j] = (int) (Math.random() * 100);
             }
         }
 
         // for (int i = 0; i < nums.length; i++) {
-        //     for (int j = 0; j < 4; j++) {
-        //         System.out.print(nums[i][j] + " ");
-        //     }
-        //     System.out.println();
+        // for (int j = 0; j < 4; j++) {
+        // System.out.print(nums[i][j] + " ");
+        // }
+        // System.out.println();
         // }
 
         // Optimized loop for array traversing
         // foreach loop
         for (int i[] : nums) {
             for (int j : i) {
-                System.out.print(j+" ");
+                System.out.print(j + " ");
             }
             System.out.println();
         }
 
+        // Jagged array
+        // no. of elements can be diff in every array
+
+        System.out.println("Jagged array");
+        int jagg[][] = new int[3][];
+
+        jagg[0] = new int[3];
+        jagg[1] = new int[4];
+        jagg[2] = new int[2];
+
+        for (int i = 0; i < jagg.length; i++) {
+            for (int j = 0; j < jagg[i].length; j++) {
+                jagg[i][j] = (int) (Math.random() * 100);
+            }
+        }
+
+        for (int i[] : jagg) {
+            for (int j : i) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
     }
 }
