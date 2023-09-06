@@ -71,5 +71,13 @@ public class array {
         // Three-dimensional arrays
         int three[][][] = new int[3][4][5];
         System.out.println(three);
+
+        // Drawbacks of arrays
+        /*
+         * Array occupies the continuos memory in the heap 
+         * It has the fix size, you cannot increase it 
+         * Array cannot be of multiple datatypes
+         * For searching purpose, it travels every element so it's time consuming
+         */
     }
 }
