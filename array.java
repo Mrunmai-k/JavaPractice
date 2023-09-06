@@ -67,5 +67,9 @@ public class array {
             }
             System.out.println();
         }
+
+        // Three-dimensional arrays
+        int three[][][] = new int[3][4][5];
+        System.out.println(three);
     }
 }
