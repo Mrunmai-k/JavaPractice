@@ -32,3 +32,5 @@ public class encapsulation {
         System.out.println(obj.getName() + " : " + obj.getAge());
     }
 }
+
+// this is a keyword to represent the current object , i.e., the object which is calling the method
