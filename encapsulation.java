@@ -1,6 +1,11 @@
 class Human {
-    private int age = 22;
-    private String name = "Mrunmai";
+    private int age;
+    private String name;
+
+    public Human(){
+        age = 22;
+        name = "Mrunmai";
+    }
 
     public int getAge() {
         return age;
@@ -22,10 +27,11 @@ class Human {
 public class encapsulation {
     public static void main(String[] args) {
         Human obj = new Human();
+        System.out.println(obj.getName() + " : " + obj.getAge());
         // obj.age = 22;
         // obj.name = "Mrunmai";
-        obj.setAge(22);
-        obj.setName("Mrunmai");
+        // obj.setAge(22);
+        // obj.setName("Mrunmai");
 
         // System.out.println(obj.age);
 
@@ -34,3 +40,4 @@ public class encapsulation {
 }
 
 // this is a keyword to represent the current object , i.e., the object which is calling the method
+// constructor's name is same as class name , special method has no return type , 
