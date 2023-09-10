@@ -2,21 +2,20 @@ class Human {
     private int age = 22;
     private String name = "Mrunmai";
 
-    public int getAge(){
+    public int getAge() {
         return age;
     }
 
-    public void setAge(int a){
-        age = a;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setName(String n){
-        name = n;
+    public void setName(String name) {
+        this.name = name;
     }
 }
 
@@ -30,6 +29,6 @@ public class encapsulation {
 
         // System.out.println(obj.age);
 
-        System.out.println(obj.getName() +" : "+ obj.getAge());
+        System.out.println(obj.getName() + " : " + obj.getAge());
     }
 }
