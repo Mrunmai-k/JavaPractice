@@ -2,9 +2,16 @@ class Human {
     private int age;
     private String name;
 
-    public Human(){
+    public Human()  //default constuctor
+    { 
         age = 22;
         name = "Mrunmai";
+    }
+
+    public Human(int age, String name)  //parameterized
+    {
+        this.age = age;
+        this.name = name;
     }
 
     public int getAge() {
@@ -28,6 +35,9 @@ public class encapsulation {
     public static void main(String[] args) {
         Human obj = new Human();
         System.out.println(obj.getName() + " : " + obj.getAge());
+
+        Human obj1 = new Human(18,"Momo");
+        System.out.println(obj1.getName() + " : " + obj1.getAge());
         // obj.age = 22;
         // obj.name = "Mrunmai";
         // obj.setAge(22);
@@ -35,7 +45,7 @@ public class encapsulation {
 
         // System.out.println(obj.age);
 
-        System.out.println(obj.getName() + " : " + obj.getAge());
+        // System.out.println(obj.getName() + " : " + obj.getAge());
     }
 }
 
