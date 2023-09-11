@@ -1,3 +1,5 @@
+// This code is commented for Package Demo
+/*
 class Calc {
     public int add(int n1, int n2) {
         return n1 + n2;
@@ -46,7 +48,7 @@ public class Inheritance {
 
     }
 }
-
+*/ 
 // Calc -> AdvCalc This is called single level inheritance
 // Calc -> AdvCalc -> VeryAdvCalc This is called multilevel inheritance
 /*
