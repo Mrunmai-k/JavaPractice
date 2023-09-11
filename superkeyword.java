@@ -17,7 +17,7 @@ class B extends A {
     }
 
     public B(int n) {
-        super();
+        this();
         System.out.println("in B int");
     }
 }
@@ -38,3 +38,4 @@ public class superkeyword {
  * By default, every class extends Object class which is not extended by any
  * other class
  */
+// this() method will call the default constructor of current class
