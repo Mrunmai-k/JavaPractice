@@ -1,8 +1,10 @@
-public class QuestionService 
-{
-    Question questions[] =new Question[5];
+import java.util.Scanner;
 
-    public QuestionService(){
+public class QuestionService {
+    Question questions[] = new Question[5];
+    String selections[] = new String[5];
+
+    public QuestionService() {
         questions[0] = new Question(1, "What is your name?", "Mrunmai", "Bhagya", "Dipti", "Momo", "Mrunmai");
         questions[1] = new Question(2, "Favorite Language?", "Java", "Python", "Cpp", "C", "Java");
         questions[2] = new Question(3, "Favorite Color?", "Red", "Blue", "Green", "Black", "Black");
@@ -11,10 +13,23 @@ public class QuestionService
 
     }
 
-    public void displayQuestions()
-    {
+    public void playQuiz() {
+        int i = 0;
         for (Question question : questions) {
-            System.out.println(question);
-        }    
+            System.out.println("Question " + question.getId());
+            System.out.println(question.getQuestion());
+            System.out.println(question.getOpt1());
+            System.out.println(question.getOpt2());
+            System.out.println(question.getOpt3());
+            System.out.println(question.getOpt4());
+
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter the answer:");
+            selections[i++] = sc.nextLine();
+            // sc.close();
+        }
+        for (String s : selections) {
+            System.out.println(s);
+        }
     }
 }
