@@ -24,12 +24,26 @@ public class QuestionService {
             System.out.println(question.getOpt4());
 
             Scanner sc = new Scanner(System.in);
-            System.out.println("Enter the answer:");
+            System.out.print("Enter the answer:");
             selections[i++] = sc.nextLine();
             // sc.close();
         }
-        for (String s : selections) {
-            System.out.println(s);
+        // for (String s : selections) {
+        //     System.out.println(s);
+        // }
+    }
+
+    public void printScore() {
+        int score = 0;
+        for (int i = 0; i < questions.length; i++) {
+            Question que = questions[i];
+            String actualans = que.getAnswer();
+            String userans = selections[i];
+
+            // compare ans and selections of user
+            if(actualans.equals(userans))
+                score++;
         }
+        System.out.println("Your score is: "+score);
     }
 }
