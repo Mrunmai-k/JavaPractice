@@ -11,6 +11,10 @@ public class operators {
         int remainder = num1 % num2;
 
         System.out.println(addition);
+        System.out.println(subtraction);
+        System.out.println(division);
+        System.out.println(multiplication);
+        System.out.println(remainder);
 
         // Unary operator
         num1 = -num1; // unary minus

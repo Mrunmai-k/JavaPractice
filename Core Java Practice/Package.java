@@ -5,7 +5,10 @@ class PackageDemo {
         Calc obj1 = new Calc();
         AdvCalc obj2 = new AdvCalc();
 
-        System.out.println(obj1.marks); // It says marks is not visible but it is there in Calc class, the problem is
+        System.out.println(obj1.getClass());
+        System.out.println(obj2.getClass());
+
+        //System.out.println(obj1.marks); // It says marks is not visible but it is there in Calc class, the problem is
                                         // anything declared in a package is accessible only inside a package. If you
                                         // want to access it outside the package then make it public.
     }

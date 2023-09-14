@@ -64,6 +64,9 @@ public class ObjectClassMethods {
         boolean result1 = obj1 == obj2; // false
         boolean result2 = obj1.equals(obj2); // false
 
+        System.out.println(result1);
+        System.out.println(result2);
+
         // We want to compare their values so will implement equals() by ourselves.
     }
 }

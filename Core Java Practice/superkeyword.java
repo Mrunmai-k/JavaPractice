@@ -26,6 +26,7 @@ public class superkeyword {
     public static void main(String[] args) {
         // B obj = new B();
         B obj1 = new B(4);
+        obj1.hashCode();
     }
 }
 
