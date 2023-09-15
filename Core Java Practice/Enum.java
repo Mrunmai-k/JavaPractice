@@ -9,9 +9,34 @@ public class Enum {
         System.out.println(s.ordinal());
 
         Status s1[] = Status.values();
-
         for (Status status : s1) {
             System.out.println(status + " : " + status.ordinal());
+        }
+
+        if (s == Status.RUNNING) {
+            System.out.println("All Good...");
+        } else if (s == Status.FAILED) {
+            System.out.println("Try Again...");
+        } else if (s == Status.PENDING) {
+            System.out.println("Please Wait...");
+        } else
+            System.out.println("Done...");
+
+        switch (s) {
+            case RUNNING:
+                System.out.println("All Good...");
+                break;
+            case FAILED:
+                System.out.println("Try Again...");
+                break;
+            case PENDING:
+                System.out.println("Please Wait...");
+                break;
+            case SUCCESS:
+                System.out.println("Done...");
+                break;
+            default:
+                break;
         }
     }
 }
