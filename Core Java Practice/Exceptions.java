@@ -1,3 +1,9 @@
+class CustomException extends Exception {
+    public CustomException(String str) {
+        super(str);
+    }
+}
+
 public class Exceptions {
     public static void main(String[] args) {
         int i = 0;
@@ -28,14 +34,19 @@ public class Exceptions {
         // exception with throw keyword
         try {
             j = 5 / k;
-            if (j==0) {
+            if (j == 0) {
                 throw new ArithmeticException("I don't want to print zero");
+            }
+            if (j != 0) {
+                throw new CustomException("Blah Blah Blah...");
             }
         } catch (ArithmeticException ae) {
             j = 5 / 1;
-            System.out.println("That's the default output");
+            System.out.println("That's the default output"+ae);
+        } catch (CustomException ce) {
+            System.out.println("Custom exceptions in java"+ce);
         } catch (Exception e) {
-            System.out.println("Something went wrong...");
+            System.out.println("Something went wrong..."+e);
         }
     }
 }
