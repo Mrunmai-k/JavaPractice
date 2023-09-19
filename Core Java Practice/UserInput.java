@@ -18,19 +18,16 @@ public class UserInput {
             br.close();
         }
 
+        // we can optimize the above code using try-with-resources, where no need to
+        // write finally block.
         System.out.println("Enter a string: ");
-        Scanner sc = null;
-        
-        try {
-            sc = new Scanner(System.in);
+
+        try (Scanner sc = new Scanner(System.in))
+        // this creates the object in try() and closes the objects after the try ends
+        {
             String str = sc.nextLine();
             System.out.println(str);
         }
-
-        finally {
-            sc.close();
-        }
-
     }
 }
 
