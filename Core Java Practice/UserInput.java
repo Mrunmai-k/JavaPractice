@@ -22,8 +22,8 @@ public class UserInput {
         // write finally block.
         System.out.println("Enter a string: ");
 
-        try (Scanner sc = new Scanner(System.in))
         // this creates the object in try() and closes the objects after the try ends
+        try (Scanner sc = new Scanner(System.in))
         {
             String str = sc.nextLine();
             System.out.println(str);
