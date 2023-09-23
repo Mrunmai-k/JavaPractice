@@ -120,3 +120,20 @@ public class Threads {
  * Thread class is implementing Runnable interface which defines run() method
  * only. So we can implement Runnable interface also.
  */
+
+/* 
+Thread States:
+
+      start()                notify()
+NEW  --------->  RUNNABLE  <----------  WAITING
+                    |                       /\
+                    |                       |
+                    |run()                  |
+                    |         sleep() &     |
+                   \|/         wait()       |  
+                 RUNNING --------------------
+                    |
+                    |
+                    |  stop()
+                    |---------> DEAD
+*/                            
