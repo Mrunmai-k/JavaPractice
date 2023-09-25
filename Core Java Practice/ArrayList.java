@@ -17,3 +17,5 @@ class ArrayListDemo {
         // }
     }
 }
+
+// List allows the duplicate values
