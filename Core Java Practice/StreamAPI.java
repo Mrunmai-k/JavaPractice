@@ -22,6 +22,14 @@ public class StreamAPI {
 
         System.out.println(addition);
 
+        Stream<Integer> sortedValues = nums.stream()
+                .filter(n -> n % 2 == 0)
+                .map(n -> n * 2)
+                .sorted();
+
+        sortedValues.forEach(n -> System.out.println(n));
+
+        
         // fetch even no.s , double them, add them
         int sum = 0;
         for (int n : nums) {
